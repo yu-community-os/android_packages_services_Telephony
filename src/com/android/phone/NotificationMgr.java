@@ -381,8 +381,7 @@ public class NotificationMgr {
                     .setContentIntent(pendingIntent)
                     .setSound(ringtoneUri)
                     .setColor(res.getColor(R.color.dialer_theme_color))
-                    .setOngoing(carrierConfig.getBoolean(
-                            CarrierConfigManager.KEY_VOICEMAIL_NOTIFICATION_PERSISTENT_BOOL));
+                    .setOngoing(false);
             //User should not be able to clear VMNotification without
             //reading it by clear or swipe option.
             if (mContext.getResources().getBoolean(
